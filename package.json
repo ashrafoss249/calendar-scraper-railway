@@ -1,0 +1,41 @@
+{
+  "name": "flight-scraper-api",
+  "version": "1.0.0",
+  "description": "Flight Scraper API for Badr Airlines",
+  "main": "railway-deployment-setup.js",
+  "scripts": {
+    "start": "node railway-calendar-api.js",
+    "dev": "nodemon railway-calendar-api.js",
+    "test": "node quick-test-single-route.js",
+    "test-high-priority": "node test-high-priority-routes.js",
+    "calendar": "node test-calendar-html.js",
+    "railway-calendar": "node railway-calendar-scraper.js",
+    "api": "node railway-calendar-api.js",
+    "test-api": "node test-api.js",
+    "postinstall": "npx playwright install --with-deps"
+  },
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-rate-limit": "^6.7.0",
+    "playwright": "^1.40.0",
+    "pg": "^8.11.3",
+    "sqlite3": "^5.1.6",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "flight-scraper",
+    "badr-airlines",
+    "travelport",
+    "api"
+  ],
+  "author": "Flight Scraper Team",
+  "license": "MIT"
+}
